@@ -1,0 +1,8 @@
+<div class="widget widget__types">
+    <h3 class="widget_header">Product Types</h3>
+    <div class="widget_content">
+        {% for product_type in shop.types %}
+        {{ product_type | link_to_type }}
+        {% endfor %}
+    </div>
+</div>
